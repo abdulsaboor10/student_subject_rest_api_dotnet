@@ -1,43 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\MyWebApiStudentGPA\\MyWebApiStudentGPA.csproj": {}
+    "/home/abdulsaboor/dev/dotnet/ead-1/MyWebApiStudentGPA/MyWebApiStudentGPA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\BL\\BL.csproj": {
+    "/home/abdulsaboor/dev/dotnet/ead-1/BL/BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\BL\\BL.csproj",
+        "projectUniqueName": "/home/abdulsaboor/dev/dotnet/ead-1/BL/BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\BL\\BL.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\BL\\obj\\",
+        "projectPath": "/home/abdulsaboor/dev/dotnet/ead-1/BL/BL.csproj",
+        "packagesPath": "/home/abdulsaboor/.nuget/packages/",
+        "outputPath": "/home/abdulsaboor/dev/dotnet/ead-1/BL/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/abdulsaboor/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\custompackage": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/vectwiz/_packaging/vectwiz/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\DL\\DL.csproj": {
-                "projectPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\DL\\DL.csproj"
+              "/home/abdulsaboor/dev/dotnet/ead-1/DL/DL.csproj": {
+                "projectPath": "/home/abdulsaboor/dev/dotnet/ead-1/DL/DL.csproj"
               }
             }
           }
@@ -51,6 +41,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -67,37 +63,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\Core\\Core.csproj": {
+    "/home/abdulsaboor/dev/dotnet/ead-1/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\Core\\Core.csproj",
+        "projectUniqueName": "/home/abdulsaboor/dev/dotnet/ead-1/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\Core\\obj\\",
+        "projectPath": "/home/abdulsaboor/dev/dotnet/ead-1/Core/Core.csproj",
+        "packagesPath": "/home/abdulsaboor/.nuget/packages/",
+        "outputPath": "/home/abdulsaboor/dev/dotnet/ead-1/Core/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/abdulsaboor/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\custompackage": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/vectwiz/_packaging/vectwiz/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -115,6 +101,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.25, )"
@@ -144,44 +134,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\DL\\DL.csproj": {
+    "/home/abdulsaboor/dev/dotnet/ead-1/DL/DL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\DL\\DL.csproj",
+        "projectUniqueName": "/home/abdulsaboor/dev/dotnet/ead-1/DL/DL.csproj",
         "projectName": "DL",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\DL\\DL.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\DL\\obj\\",
+        "projectPath": "/home/abdulsaboor/dev/dotnet/ead-1/DL/DL.csproj",
+        "packagesPath": "/home/abdulsaboor/.nuget/packages/",
+        "outputPath": "/home/abdulsaboor/dev/dotnet/ead-1/DL/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/abdulsaboor/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\custompackage": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/vectwiz/_packaging/vectwiz/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\Core\\Core.csproj"
+              "/home/abdulsaboor/dev/dotnet/ead-1/Core/Core.csproj": {
+                "projectPath": "/home/abdulsaboor/dev/dotnet/ead-1/Core/Core.csproj"
               }
             }
           }
@@ -196,6 +176,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.25, )"
@@ -217,44 +201,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\MyWebApiStudentGPA\\MyWebApiStudentGPA.csproj": {
+    "/home/abdulsaboor/dev/dotnet/ead-1/MyWebApiStudentGPA/MyWebApiStudentGPA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\MyWebApiStudentGPA\\MyWebApiStudentGPA.csproj",
+        "projectUniqueName": "/home/abdulsaboor/dev/dotnet/ead-1/MyWebApiStudentGPA/MyWebApiStudentGPA.csproj",
         "projectName": "MyWebApiStudentGPA",
-        "projectPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\MyWebApiStudentGPA\\MyWebApiStudentGPA.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\MyWebApiStudentGPA\\obj\\",
+        "projectPath": "/home/abdulsaboor/dev/dotnet/ead-1/MyWebApiStudentGPA/MyWebApiStudentGPA.csproj",
+        "packagesPath": "/home/abdulsaboor/.nuget/packages/",
+        "outputPath": "/home/abdulsaboor/dev/dotnet/ead-1/MyWebApiStudentGPA/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/abdulsaboor/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\custompackage": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/vectwiz/_packaging/vectwiz/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\BL\\BL.csproj": {
-                "projectPath": "C:\\Users\\admin\\source\\repos\\MyWebApiStudentGPA\\BL\\BL.csproj"
+              "/home/abdulsaboor/dev/dotnet/ead-1/BL/BL.csproj": {
+                "projectPath": "/home/abdulsaboor/dev/dotnet/ead-1/BL/BL.csproj"
               }
             }
           }
@@ -293,6 +267,10 @@
               "target": "Package",
               "version": "[6.0.24, )"
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -309,6 +287,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.25, 6.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -317,7 +301,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
         }
       }
     }

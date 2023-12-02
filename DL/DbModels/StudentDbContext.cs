@@ -18,10 +18,7 @@ namespace DL.DbModels
         {
 
         }
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer("Server=TAYYAB\\SQLEXPRESS;Database=StudentCourse;User ID=sa;Password=123; Trusted_Connection=True;");
-        //}
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StudentDbDto>().HasKey(e => e.Id);

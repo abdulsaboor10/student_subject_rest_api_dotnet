@@ -13,7 +13,7 @@ namespace Infrastructure.Data
                                          IdentityUserLogin<int>, IdentityRoleClaim<int>,
                                          IdentityUserToken<int>>
     {
-       
+
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public DbSet<PasswordResetToken> PasswordResetTokens { get; set; }
 
@@ -36,6 +36,6 @@ namespace Infrastructure.Data
             modelBuilder.Entity<PasswordResetToken>().HasKey(e => e.Id);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
-      
+
     }
 }
