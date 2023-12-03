@@ -19,19 +19,25 @@ namespace MyWebApiStudentGPA.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<SubjectDbDto>> getStudent(int id)
+        public async Task<ActionResult> getSubject(int id)
         {
             var s = await _db.subjectDbDto.FindAsync(id);
             if (s == null) {
                 return NotFound();
             }
-            return Ok(s);
+            return Ok(new SubjectResponseDto{
+                Id = s.id,
+                Name = s.Name
+            });
         }
         [HttpGet("")]
-        public async Task<ActionResult<List<SubjectDbDto>>> getAllStudents()
+        public async Task<ActionResult<List<SubjectDbDto>>> getAllSubjects()
         {
-            var s = await _db.subjectDbDto.ToListAsync();
-            return Ok(s);
+            var subjects = await _db.subjectDbDto.Select(s => new SubjectResponseDto{
+                Id = s.id,
+                Name = s.Name
+            }).ToListAsync();
+            return Ok(subjects);
         }
         [HttpPost]
         public async Task<ActionResult<SubjectResponseDto>> createSubject(SubjectRequestDto _Subject)
@@ -61,7 +67,7 @@ namespace MyWebApiStudentGPA.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult> deleteStudent(int id)
+        public async Task<ActionResult> deleteSubject(int id)
         {
             var subject = await _db.subjectDbDto.FindAsync(id);
             if (subject == null)
