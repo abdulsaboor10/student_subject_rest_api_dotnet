@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace DL.DbModels
@@ -11,8 +12,7 @@ namespace DL.DbModels
     {
         [Key]
         public int id { get; set; }
-        string Name { get; set; }
-
-        ICollection<StudentSubjectDbDto> StudentSubjects { get; set; } = new List<StudentSubjectDbDto>();
+        public string Name { get; set; }
+        public ICollection<StudentSubjectDbDto> StudentSubjects { get; set; } = new List<StudentSubjectDbDto>();
     }
 }

@@ -11,5 +11,6 @@ namespace Core.Models.RequestModels
         public string? Name { get; set; }
         public string? RollNo { get; set; }
         public string PhoneNumber { get ; set ; }
+        public double? GPA { get ; set ; }
     }
 }

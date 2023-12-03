@@ -28,3 +28,5 @@ C:/Users/admin/source/repos/MyWebApiStudentGPA/DL/obj/Debug/net6.0/ref/DL.dll
 /home/abdulsaboor/dev/dotnet/ead-1/DL/obj/Debug/net6.0/refint/DL.dll
 /home/abdulsaboor/dev/dotnet/ead-1/DL/obj/Debug/net6.0/DL.pdb
 /home/abdulsaboor/dev/dotnet/ead-1/DL/obj/Debug/net6.0/ref/DL.dll
+/home/abdulsaboor/dev/dotnet/ead-1/DL/bin/Debug/net6.0/DL.runtimeconfig.json
+/home/abdulsaboor/dev/dotnet/ead-1/DL/obj/Debug/net6.0/DL.genruntimeconfig.cache
