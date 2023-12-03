@@ -22,12 +22,25 @@ namespace MyWebApiStudentGPA.Controllers
         public async Task<ActionResult> getStudent(int id)
         {
             var st = await _db.studentDbDto.FindAsync(id);
-            return Ok(st);
+
+            return Ok(new StudentResponseDto  {
+                Id = st.Id,
+                Name = st.Name , 
+                RollNo = st.RollNumber,
+                PhoneNumber = st.PhoneNumber,
+                GPA = st.GPA ?? 0
+            });
         }
         [HttpGet("")]
         public async Task<ActionResult> getAllStudents()
         {
-            var st = await _db.studentDbDto.ToListAsync();
+            var st = await _db.studentDbDto.Select(st => new StudentResponseDto  {
+                Id = st.Id,
+                Name = st.Name , 
+                RollNo = st.RollNumber,
+                PhoneNumber = st.PhoneNumber,
+                GPA = st.GPA ?? 0
+            }).ToListAsync();
             return Ok(st);
         }
 
@@ -44,7 +57,10 @@ namespace MyWebApiStudentGPA.Controllers
                 return NotFound();
             }
 
-            var subjects = result.StudentSubjects.Select(st_sub => st_sub.SubjectDbDto).ToList();
+            var subjects = result.StudentSubjects.Select(st_sub => new SubjectResponseDto {
+                Id = st_sub.Id,
+                Name = st_sub.SubjectDbDto.Name
+            }).ToList();
 
             return Ok(subjects);
         }
@@ -66,7 +82,11 @@ namespace MyWebApiStudentGPA.Controllers
         [HttpGet("{student_id}/marks")]
         public async Task<ActionResult> GetAllSubjectMarks(int student_id)
         {
-            var marks = await _db.studentSubjectDbDto.Where(st_sub => st_sub.StudentId == student_id).Select(st_sub => st_sub.Marks).ToListAsync();
+            var marks = await _db.studentSubjectDbDto.Include(st_sub => st_sub.SubjectDbDto).Where(st_sub => st_sub.StudentId == student_id).Select(st_sub => new SubjectMarksResponseDto{
+                Id = st_sub.Id,
+                Name = st_sub.SubjectDbDto.Name,
+                Marks = st_sub.Marks
+            }).ToListAsync();
             
             return Ok(marks);
 
